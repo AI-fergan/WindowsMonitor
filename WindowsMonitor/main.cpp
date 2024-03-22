@@ -1,10 +1,9 @@
 #include "pch.h"
 #include "design.h"
 #include "optionsHndler.h"
+
 int main(void) {
 	int option;
-
-	
 
 	do {
 		openScreen();

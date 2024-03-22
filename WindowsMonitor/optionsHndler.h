@@ -1,6 +1,7 @@
 #pragma once
 #include "pch.h"
 #include "processes.h"
+#include "system.h"
 
 enum options {
 	System_Info,
