@@ -20,8 +20,20 @@ void PrintProcessNameAndID(DWORD processID)
     }
 
     // Print the process name and identifier.
+    _tprintf(TEXT("{Process_name: %s}"), szProcessName);
+    DWORD exitCode = 0;
+    GetExitCodeProcess(hProcess, &exitCode);
+    cout << "\t{status:";
+    if (exitCode == STILL_ACTIVE)
+    {        
+        cout << "run}";
+    }
+    else {
+        cout << "suspended}";
+    }
 
-    _tprintf(TEXT("%s  (PID: %u)\n"), szProcessName, processID);
+    _tprintf(TEXT("\t{PID: %u}\n"), processID);
+
     // Release the handle to the process.
 
     CloseHandle(hProcess);
@@ -32,7 +44,7 @@ void PrintAllProcessesNameAndID() {
 
     DWORD aProcesses[1024], cbNeeded, cProcesses;
     unsigned int i;
-
+    char choice = ' ';
     if (!EnumProcesses(aProcesses, sizeof(aProcesses), &cbNeeded)) { return; }
 
     // Calculate how many process identifiers were returned.
@@ -43,5 +55,16 @@ void PrintAllProcessesNameAndID() {
         if (aProcesses[i] != 0) {
             PrintProcessNameAndID(aProcesses[i]);
         }
+        if ((i + 1) % 10 == 0) {
+            do {
+                cout << "(press enter for continue or q for exit)";
+                choice = _getch();
+                if (choice == 'q') {
+                    return;
+                }                
+            } while (choice == '\n');
+            cout << endl;
+        }
+        
     }
 }
