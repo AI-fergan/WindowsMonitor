@@ -3,7 +3,7 @@
 void printStartupData() {
     HKEY hKey;
     LPCWSTR keyPath = L"Software\\Microsoft\\Windows\\CurrentVersion\\Run";
-
+    vector< WCHAR> values;
     LONG result = RegOpenKeyEx(HKEY_CURRENT_USER, keyPath, 0, KEY_READ, &hKey);
 
     if (result == ERROR_SUCCESS) {

@@ -3,6 +3,7 @@
 #include "processes.h"
 #include "system.h"
 #include "startup.h"
+#include "services.h"
 
 enum options {
 	System_Info,

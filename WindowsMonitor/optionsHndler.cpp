@@ -24,6 +24,7 @@ void HandleOptions(int option) {
 		break;
 
 	case Services_Data:		
+		printAllServices();
 		break;
 
 	case Disks_Details:

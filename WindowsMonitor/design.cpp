@@ -13,7 +13,7 @@ void openScreen() {
 int options() {
 	int option; 
 	cout << "(Note: please write the number of the option you choose)" << endl;
-	cout << "(Exit: please enter '-1')" << endl;
+	cout << "(Exit: For manual exit please enter '-1')" << endl;
 	cout << "Options:" << endl;
 	cout << " ( 0 )  System Information" << endl;
 	cout << " ( 1 )  Startup Information" << endl;
