@@ -9,6 +9,8 @@
 #include <psapi.h>
 #include <iomanip>
 
+#define EXIT -1
+
 using std::cout;
 using std::cin;
 using std::string;
