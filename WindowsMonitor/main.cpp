@@ -1,7 +1,9 @@
 #include "pch.h"
 #include "processes.h"
-
+#include "design.h"
 int main(void) {
-	PrintAllProcessesNameAndID();
+	openScreen();
+	options();
+	//PrintAllProcessesNameAndID();
 	return 0;
 }

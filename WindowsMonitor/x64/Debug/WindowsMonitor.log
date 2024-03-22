@@ -1,1 +1,5 @@
-﻿  WindowsMonitor.vcxproj -> C:\Users\test0\OneDrive\שולחן העבודה\My_projects\WindowsMonitor\WindowsMonitor\x64\Debug\WindowsMonitor.exe
+﻿  design.cpp
+  optionsHndler.cpp
+C:\Users\test0\OneDrive\שולחן העבודה\My_projects\WindowsMonitor\WindowsMonitor\optionsHndler.cpp(6,2): warning C4060: switch statement contains no 'case' or 'default' labels
+  Generating Code...
+  WindowsMonitor.vcxproj -> C:\Users\test0\OneDrive\שולחן העבודה\My_projects\WindowsMonitor\WindowsMonitor\x64\Debug\WindowsMonitor.exe

@@ -21,12 +21,24 @@
     <ClCompile Include="processes.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="design.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="optionsHndler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="processes.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="pch.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="design.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="optionsHndler.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
