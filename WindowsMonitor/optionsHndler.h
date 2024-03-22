@@ -2,6 +2,7 @@
 #include "pch.h"
 #include "processes.h"
 #include "system.h"
+#include "startup.h"
 
 enum options {
 	System_Info,

@@ -23,6 +23,7 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="optionsHndler.cpp" />
     <ClCompile Include="processes.cpp" />
+    <ClCompile Include="startup.cpp" />
     <ClCompile Include="system.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -30,6 +31,7 @@
     <ClInclude Include="optionsHndler.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="processes.h" />
+    <ClInclude Include="startup.h" />
     <ClInclude Include="system.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">

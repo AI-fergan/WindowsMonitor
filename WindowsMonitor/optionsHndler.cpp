@@ -16,13 +16,14 @@ void HandleOptions(int option) {
 		break;
 
 	case Startup_Info:
+		printStartupData();
 		break;
 
 	case Processes_Data:
 		PrintAllProcessesNameAndID();		
 		break;
 
-	case Services_Data:
+	case Services_Data:		
 		break;
 
 	case Disks_Details:
