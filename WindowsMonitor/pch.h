@@ -23,9 +23,11 @@
 #define GIGABYTE 1073741824 // b * kb * mb = 1024 * 3
 
 using std::cout;
+using std::cerr;
 using std::cin;
 using std::string;
 using std::endl;
 using std::vector;
 using std::wcerr;
 using std::wcout;
+using std::wstring;

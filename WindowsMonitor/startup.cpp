@@ -17,7 +17,7 @@ void printStartupData() {
         while (true) {
             result = RegEnumValue(hKey, index, valueName, &valueNameSize, NULL, &valueType, data, &dataSize);
             if (result == ERROR_SUCCESS) {
-                std::wcout << "Name: " << valueName << endl << "Status: Enabled" << endl << endl;
+                wcout << "Name: " << valueName << endl << "Status: Enabled" << endl << endl;
                 // Print or process the data here, depending on the value type
                 index++;
                 valueNameSize = sizeof(valueName) / sizeof(valueName[0]);
@@ -27,7 +27,7 @@ void printStartupData() {
                 break; // No more values
             }
             else {
-                std::wcerr << L"Failed to enumerate values. Error code: " << result << std::endl;
+                wcerr << L"Failed to enumerate values. Error code: " << result << endl;
                 break;
             }
         }
@@ -35,7 +35,7 @@ void printStartupData() {
         RegCloseKey(hKey);
     }
     else {
-        std::wcerr << L"Failed to open key. Error code: " << result << std::endl;
+        wcerr << L"Failed to open key. Error code: " << result << endl;
     }
 
     keyPath = L"Software\\Microsoft\\Windows\\CurrentVersion\\Run\\AutorunsDisabled";
@@ -53,7 +53,7 @@ void printStartupData() {
         while (true) {
             result = RegEnumValue(hKey, index, valueName, &valueNameSize, NULL, &valueType, data, &dataSize);
             if (result == ERROR_SUCCESS) {
-                std::wcout << "Name: " << valueName << endl << "Status: Disabled" << endl << endl;
+                wcout << "Name: " << valueName << endl << "Status: Disabled" << endl << endl;
                 // Print or process the data here, depending on the value type
                 index++;
                 valueNameSize = sizeof(valueName) / sizeof(valueName[0]);
@@ -63,7 +63,7 @@ void printStartupData() {
                 break; // No more values
             }
             else {
-                std::wcerr << L"Failed to enumerate values. Error code: " << result << std::endl;
+                wcerr << L"Failed to enumerate values. Error code: " << result << endl;
                 break;
             }
         }
@@ -71,6 +71,6 @@ void printStartupData() {
         RegCloseKey(hKey);
     }
     else {
-        std::wcerr << L"Failed to open key. Error code: " << result << std::endl;
+        wcerr << L"Failed to open key. Error code: " << result << endl;
     }
 }

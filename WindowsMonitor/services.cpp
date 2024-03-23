@@ -32,7 +32,7 @@ void printAllServices() {
                 break; // No more subkeys
             }
             else {
-                std::wcerr << L"Failed to enumerate subkeys. Error code: " << result << std::endl;
+                wcerr << L"Failed to enumerate subkeys. Error code: " << result << endl;
                 break;
             }
         }
@@ -40,6 +40,6 @@ void printAllServices() {
         RegCloseKey(hKey);
     }
     else {
-        std::wcerr << L"Failed to open key. Error code: " << result << std::endl;
+        wcerr << L"Failed to open key. Error code: " << result << endl;
     }
 }

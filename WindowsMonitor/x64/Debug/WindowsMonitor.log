@@ -1,2 +1,16 @@
-﻿  wifi.cpp
+﻿  ethernet.cpp
+  graphics.cpp
+  processor.cpp
+C:\Users\test0\OneDrive\שולחן העבודה\My_projects\WindowsMonitor\WindowsMonitor\processor.cpp(7,10): warning C4101: 'choice': unreferenced local variable
+  design.cpp
+  drives.cpp
+  main.cpp
+  memory.cpp
+  optionsHndler.cpp
+  processes.cpp
+  services.cpp
+  startup.cpp
+  system.cpp
+  wifi.cpp
+  Generating Code...
   WindowsMonitor.vcxproj -> C:\Users\test0\OneDrive\שולחן העבודה\My_projects\WindowsMonitor\WindowsMonitor\x64\Debug\WindowsMonitor.exe

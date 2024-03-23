@@ -33,19 +33,19 @@ void printAvailableNetworks() {
                     WlanFreeMemory(pAvailableNetworkList);
                 }
                 else {
-                    std::cerr << "WlanGetAvailableNetworkList failed with error: " << dwResult << endl;
+                    cerr << "WlanGetAvailableNetworkList failed with error: " << dwResult << endl;
                 }
             }
             WlanFreeMemory(pInterfaceList);
         }
         else {
-            std::cerr << "WlanEnumInterfaces failed with error: " << dwResult << endl;
+            cerr << "WlanEnumInterfaces failed with error: " << dwResult << endl;
         }
 
         WlanCloseHandle(hClient, NULL);
     }
     else {
-        std::cerr << "WlanOpenHandle failed with error: " << dwResult << endl;
+        cerr << "WlanOpenHandle failed with error: " << dwResult << endl;
     }
 
 }

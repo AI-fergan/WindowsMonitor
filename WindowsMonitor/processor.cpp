@@ -22,7 +22,7 @@ DWORD countLogicalProcessors(){
                 break; // No more subkeys
             }
             else {
-                std::wcerr << L"Failed to enumerate subkeys. Error code: " << result << std::endl;
+                wcerr << L"Failed to enumerate subkeys. Error code: " << result << endl;
                 break;
             }
         }
@@ -30,7 +30,7 @@ DWORD countLogicalProcessors(){
         RegCloseKey(hKey);
     }
     else {
-        std::wcerr << L"Failed to open key. Error code: " << result << std::endl;
+        wcerr << L"Failed to open key. Error code: " << result << endl;
     }
 
     return index;
@@ -50,22 +50,22 @@ void printProcessorIdentifier() {
 
         result = RegQueryValueEx(hKey, keyName, NULL, NULL, NULL, &bufferSize);
         if (result == ERROR_SUCCESS) {
-            std::wstring identifier(bufferSize / sizeof(wchar_t), L'\0');
+            wstring identifier(bufferSize / sizeof(wchar_t), L'\0');
             result = RegQueryValueEx(hKey, keyName, NULL, NULL, reinterpret_cast<LPBYTE>(&identifier[0]), &bufferSize);
             if (result == ERROR_SUCCESS) {
-                std::wcout << "Identifier: " << identifier << std::endl;
+                wcout << "Identifier: " << identifier << endl;
             }
             else {
-                std::cerr << "Failed to query value. Error code: " << result << std::endl;
+                cerr << "Failed to query value. Error code: " << result << endl;
             }
         }
         else {
-            std::cerr << "Failed to query value size. Error code: " << result << std::endl;
+            ::cerr << "Failed to query value size. Error code: " << result << endl;
         }
         RegCloseKey(hKey);
     }
     else {
-        std::cerr << "Failed to open registry key. Error code: " << result << std::endl;
+        cerr << "Failed to open registry key. Error code: " << result << endl;
     }
 }
 
@@ -79,21 +79,21 @@ void printProcessorName() {
 
         result = RegQueryValueEx(hKey, keyName, NULL, NULL, NULL, &bufferSize);
         if (result == ERROR_SUCCESS) {
-            std::wstring identifier(bufferSize / sizeof(wchar_t), L'\0');
+            wstring identifier(bufferSize / sizeof(wchar_t), L'\0');
             result = RegQueryValueEx(hKey, keyName, NULL, NULL, reinterpret_cast<LPBYTE>(&identifier[0]), &bufferSize);
             if (result == ERROR_SUCCESS) {
-                std::wcout << "Processor name: " << identifier << std::endl;
+                wcout << "Processor name: " << identifier << endl;
             }
             else {
-                std::cerr << "Failed to query value. Error code: " << result << std::endl;
+                cerr << "Failed to query value. Error code: " << result << endl;
             }
         }
         else {
-            std::cerr << "Failed to query value size. Error code: " << result << std::endl;
+            cerr << "Failed to query value size. Error code: " << result << endl;
         }
         RegCloseKey(hKey);
     }
     else {
-        std::cerr << "Failed to open registry key. Error code: " << result << std::endl;
+        cerr << "Failed to open registry key. Error code: " << result << endl;
     }
 }
