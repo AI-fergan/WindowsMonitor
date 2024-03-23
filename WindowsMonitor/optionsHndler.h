@@ -8,6 +8,7 @@
 #include "processor.h"
 #include "graphics.h"
 #include "memory.h"
+#include "ethernet.h"
 
 enum options {
 	System_Info,

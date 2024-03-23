@@ -11,7 +11,9 @@
 #include <tchar.h>
 #include <vector>
 #include <dxgi.h>
+#include <IPHlpApi.h>
 
+#pragma comment(lib, "IPHlpApi.lib")
 #pragma comment(lib, "dxgi.lib")
 
 #define EXIT -1

@@ -47,6 +47,7 @@ void HandleOptions(int option) {
 		break;
 
 	case Ethernet_info:
+		printEthernetInfo();
 		break;
 
 	case Wifi_Info:

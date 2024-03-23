@@ -19,6 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="ethernet.cpp" />
     <ClCompile Include="graphics.cpp" />
     <ClCompile Include="processor.cpp" />
     <ClCompile Include="design.cpp" />
@@ -32,6 +33,7 @@
     <ClCompile Include="system.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="ethernet.h" />
     <ClInclude Include="graphics.h" />
     <ClInclude Include="processor.h" />
     <ClInclude Include="design.h" />
