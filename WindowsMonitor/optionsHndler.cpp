@@ -32,12 +32,18 @@ void HandleOptions(int option) {
 		break;
 
 	case CPU_Monitor:
+		printProcessorName();
+		printProcessorIdentifier();
+		printLogicalCores();
 		break;
 
 	case GPU_Monitor:
+		printGraphicsDetails();
 		break;
 
 	case Mem_Data:
+		printDiskMemoryInfo();
+		printRamMemoryInfo();
 		break;
 
 	case Ethernet_info:

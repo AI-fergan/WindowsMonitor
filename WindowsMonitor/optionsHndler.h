@@ -5,6 +5,9 @@
 #include "startup.h"
 #include "services.h"
 #include "drives.h"
+#include "processor.h"
+#include "graphics.h"
+#include "memory.h"
 
 enum options {
 	System_Info,

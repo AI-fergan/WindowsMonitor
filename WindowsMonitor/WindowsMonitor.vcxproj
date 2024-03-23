@@ -19,6 +19,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="graphics.cpp" />
+    <ClCompile Include="processor.cpp" />
     <ClCompile Include="design.cpp" />
     <ClCompile Include="drives.cpp" />
     <ClCompile Include="main.cpp" />
@@ -30,6 +32,8 @@
     <ClCompile Include="system.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="graphics.h" />
+    <ClInclude Include="processor.h" />
     <ClInclude Include="design.h" />
     <ClInclude Include="drives.h" />
     <ClInclude Include="memory.h" />

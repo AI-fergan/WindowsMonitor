@@ -10,6 +10,9 @@
 #include <iomanip>
 #include <tchar.h>
 #include <vector>
+#include <dxgi.h>
+
+#pragma comment(lib, "dxgi.lib")
 
 #define EXIT -1
 #define INFO_BUFFER_SIZE 32767
