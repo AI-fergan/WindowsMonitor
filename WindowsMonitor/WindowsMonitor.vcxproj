@@ -20,7 +20,9 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="design.cpp" />
+    <ClCompile Include="drives.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="memory.cpp" />
     <ClCompile Include="optionsHndler.cpp" />
     <ClCompile Include="processes.cpp" />
     <ClCompile Include="services.cpp" />
@@ -29,6 +31,8 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="design.h" />
+    <ClInclude Include="drives.h" />
+    <ClInclude Include="memory.h" />
     <ClInclude Include="optionsHndler.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="processes.h" />

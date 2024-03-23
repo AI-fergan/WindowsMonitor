@@ -28,6 +28,7 @@ void HandleOptions(int option) {
 		break;
 
 	case Disks_Details:
+		printDrivesDetails();
 		break;
 
 	case CPU_Monitor:
