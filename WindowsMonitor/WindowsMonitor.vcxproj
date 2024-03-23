@@ -31,6 +31,7 @@
     <ClCompile Include="services.cpp" />
     <ClCompile Include="startup.cpp" />
     <ClCompile Include="system.cpp" />
+    <ClCompile Include="wifi.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ethernet.h" />
@@ -45,6 +46,7 @@
     <ClInclude Include="services.h" />
     <ClInclude Include="startup.h" />
     <ClInclude Include="system.h" />
+    <ClInclude Include="wifi.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>

@@ -12,7 +12,9 @@
 #include <vector>
 #include <dxgi.h>
 #include <IPHlpApi.h>
+#include <Wlanapi.h>
 
+#pragma comment(lib, "Wlanapi.lib")
 #pragma comment(lib, "IPHlpApi.lib")
 #pragma comment(lib, "dxgi.lib")
 

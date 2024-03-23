@@ -9,6 +9,7 @@
 #include "graphics.h"
 #include "memory.h"
 #include "ethernet.h"
+#include "wifi.h"
 
 enum options {
 	System_Info,

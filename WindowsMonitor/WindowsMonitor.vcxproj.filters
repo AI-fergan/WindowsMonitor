@@ -51,6 +51,9 @@
     <ClCompile Include="ethernet.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="wifi.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="processes.h">
@@ -87,6 +90,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="ethernet.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wifi.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

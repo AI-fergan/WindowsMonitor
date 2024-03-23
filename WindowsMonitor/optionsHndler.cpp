@@ -51,6 +51,7 @@ void HandleOptions(int option) {
 		break;
 
 	case Wifi_Info:
+		printAvailableNetworks();
 		break;	
 	}
 
